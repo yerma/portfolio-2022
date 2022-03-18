@@ -28,14 +28,13 @@
 <style type="scss">
   .toggle {
     position: absolute;
-    top: 0.8em;
-    right: 0.8em;
+    top: 1.2em;
+    right: 1.2em;
   }
   
   label {
     padding: 4px 8px;
     background: var(--text-color);
-    border: 1px solid var(--background);
     border-radius: 50px;
     position: relative;
     cursor: pointer;

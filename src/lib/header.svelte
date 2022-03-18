@@ -1,30 +1,50 @@
-<header>
-  <h1>Yermaín<span>Araya</span></h1>
+<div class="diagonal-box">
+  <header>
+    <h1>Yermaín<span>Araya</span></h1>
+    <nav>
+      <a>About</a>
+      <a>Works</a>
+      <a>Blog</a>
+      <a>Contact</a>
+    </nav>
+  </header>
+</div>
 
-  <nav>
-    <a>About</a>
-    <a>Works</a>
-    <a>Blog</a>
-    <a>Contact</a>
-  </nav>
-</header>
 
 <style type="scss">
+  .diagonal-box {
+    position: fixed;
+    background-color: transparent;
+    width: 240px;
+    height: 100vh;
+    transform: skew(-12deg);
+    border-right: 1px solid var(--text-color);
+    transition: border-right 900ms ease-in-out;
+  }
   header {
-    padding: .8rem 0;
+    height: 100%;
+    padding: .8rem 0 1rem;
+    transform: skew(12deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   h1 {
-    margin-bottom: .2em;
-    font-size: 1.8em;
+    margin-bottom: .2rem;
+    font-size: 1.8rem;
 
     span {
-      color: gray;
+      color: var(--accent);
+      vertical-align: -34px;
+      margin-left: -77px;
     }
   }
 
   nav {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
     a {
-      display: block;
       font-weight: 300;
       font-style: italic;
 

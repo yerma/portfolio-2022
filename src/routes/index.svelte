@@ -1,81 +1,15 @@
-<script>
-  import Header from '../lib/header.svelte'
-  import Toggle from '../lib/toggle.svelte'
+<svelte:head>
+  <title>Yermain Araya · Web Development & Graphic Design</title>
+</svelte:head>
 
-  let darkTheme = false
+<div>
+  Suspendisse enim turpis, dictum sed, iaculis a, condimentum nec, nisi. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero, non adipiscing dolor urna a orci. Suspendisse eu ligula. Pellentesque commodo eros a enim.
 
-  function toggleTheme () {
-    document.body.classList.toggle('dark-theme')
-  }
-</script>
-
-<Header />
-<Toggle
-  labelActive="🌞"
-  initialValue={darkTheme}
-  on:toggle={toggleTheme}
->🌜</Toggle>
-
-<style lang="scss">
-  :global {
-
-    :root {
-      --background: white;
-      --text-color: #303030;
-      --accent: rgb(50, 173, 161);
-    }
-
-    html {
-      box-sizing: border-box;
-      font-size: 150%; /* 24px */
-    }
-
-    *, *:before, *:after {
-      box-sizing: inherit;
-    }
-
-    body {
-      margin: 0;
-      padding: 0 0 0 .8rem;
-      font-family: azote, serif;
-      font-weight: 300;
-      font-style: normal;
-      color: var(--text-color);
-      background-color: var(--background);
-      border-left: 4px solid var(--accent);
-
-      &.dark-theme {
-        --background: #041c33;
-        --text-color: white;
-        --accent: turquoise;
-      }
-    }
-
-    h1, h2, h3, h4, h5 {
-      font-family: contralto-big, sans-serif;
-      font-weight: 400;
-      font-style: normal;
-    }
-
-    h1 {
-      margin-top: 0;
-      font-size: 1.802rem;
-    }
-
-    h2 { font-size: 1.602rem; }
-
-    h3 { font-size: 1.424rem; }
-
-    h4 { font-size: 1.266rem; }
-
-    h5 { font-size: 1.125rem; }
-
-    small, .text_small { font-size: 0.889rem; }
-
-    a {
-      color: var(--accent);
-      font-weight: 400;
-      cursor: pointer;
-    }
-  }
-</style>
+  Morbi vestibulum volutpat enim. Cras non dolor. In ac felis quis tortor malesuada pretium. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi. Aenean imperdiet.
+  
+  Nunc nulla. Ut a nisl id ante tempus hendrerit. Nullam cursus lacinia erat. Curabitur vestibulum aliquam leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia.
+  
+  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Ut tincidunt tincidunt erat. Aenean viverra rhoncus pede. Fusce egestas elit eget lorem.
+  
+  Sed libero. Duis vel nibh at velit scelerisque suscipit. Cras risus ipsum, faucibus ut, ullamcorper id, varius ac, leo. Etiam sit amet orci eget eros faucibus tincidunt. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut ipsum.
+</div>
